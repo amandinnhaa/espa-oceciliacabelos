@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Cecília Cabelos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url(img/hero/rosa.jpg); /* Substitua pelo caminho correto da sua imagem */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .produto {
+            margin-bottom: 10px;
+        }
+        .produto img {
+        animation: float 3s ease-in-out infinite; /* Aplica a animação de flutuação */
+        }
+        .descricao-produto {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ffdee9;
+            background-color: #ffdee9;
+        }
+        .verMaisBtn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        header, main {
+            background-color: rgba(255, 255, 255, 0.658);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        
+        h1, h2 {
+            margin-top: 0;
+            
+        }
+        h1 {
+            color: pink;
+        }
+        .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+
+    .social-icons img {
+        width: 24px; /* Tamanho dos ícones */
+        height: 24px; /* Tamanho dos ícones */
+    }
+
+    .social-icons a:hover img {
+        opacity: 0.7; /* Efeito ao passar o mouse */
+    }
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    .produto img {
+        animation: float 3s ease-in-out infinite; /* Aplica a animação de flutuação */
+    }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Espaço Cecília Cabelos</h1>
+    </header>
+    <main>
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>Corte de Cabelo</li>
+                <li>Escova</li>
+                <li>Sobrancelha</li>
+                <li>Progressiva</li>
+                <li>Selagem</li>
+                <li>Hidratação</li>
+                <li>Botox Capilar</li>
+            </ul>
+        </section>
+        <section id="produtos">
+            <h2>Nossos Produtos</h2>
+            <div class="produtos-container">
+                <div class="produto">
+                    <img src="img/77c7a888d21467d2243574d4d8fe2746-removebg-preview.png" alt="Shampoo 1">
+                    <p>Shampoo e Máscara Mandioca 300g</p>
+                    <button class="verMaisBtn" onclick="showDescription(1)">Descrição</button>
+                    <div id="descricao1" class="descricao-produto">
+                        <p> Mantém os cabelos macios, saudáveis e brilhantes, com vitaminas, 
+                            proteínas e minerais do extrato de mandioca. A combinação dos
+                            nutrientes da mandioca traz aos cabelos força da raiz até as
+                            pontas, ajuda no crescimento capilar saudável com brilho e maciez.</p>
+                    </div>
+                <div class="produto">
+                        <img src="img/kit_tutano__2_-removebg-preview (2).png" alt="Shampoo 2">
+                        <p>Shampoo e Máscara Tutano 300g</p>
+                        <button class="verMaisBtn" onclick="showDescription(2)">Descrição</button>
+                        <div id="descricao2" class="descricao-produto">
+                            <p> O Shampoo Hidratante de Tutano limpa  
+                                suavemente, mantendo anutrição natural dos cabelos.  
+                                Já a Máscara de Tratamento Capilar de Tutano é 
+                                indicada para cabelos ressecados, porosos e desalinhados.
+                                Além de hidratar, a combinação de nutrientes do tutano  
+                                resulta em cabelos alinhados, sem frizz, brilhantes,
+                                macios e sedosos.</p>
+                        </div>
+                    </div>   
+                </div>
+                <div class="produto">
+                    <img src="img/kit 1l (1).png" alt="Shampoo 3">
+                    <p>Kit Shampoo 1l E Máscara 1kg </p>
+                    <button class="verMaisBtn" onclick="showDescription(3)">Descrição</button>
+                    <div id="descricao3" class="descricao-produto">
+                        <p> A Linha Mandioca é ideal para quem busca cabelos macios,  
+                            saudáveis e brilhantes. O Shampoo é rico em extrato de  
+                            mandioca com pH balanceado, limpa suavemente sem danificar 
+                            os fios e preservando sua hidratação natural. Já a Máscara
+                            é perfeita para tratar cabelos secos e danificados, 
+                            dando uma hidratação. Essa combinação nutricional
+                            fortalece os cabelos da raiz às pontas, estimulando
+                            um crescimento capilar saudável, brilhante e macio. </p>
+                                            
+                    </div> 
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://api.whatsapp.com/send?phone=5589994727362&text=Ol%C3%A1!%20Vim%20pelo%20seu%20Instagram,%20quero%20informa%C3%A7%C3%A3o%20sobre%20seu%20trabalho." target="_blank">
+                    <img src="img/whatsapp.png" alt="whatsapp" width="24" height="24">
+                </a>
+                <a href="https://www.instagram.com/espaco.ceciliacabelos_20?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                    <img src="img/instagram.png" alt="instagram" width="24" height="24">
+                </a>
+                
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        function showDescription(id) {
+            var description = document.getElementById('descricao' + id);
+            if (description.style.display === 'none') {
+                description.style.display = 'block';
+            } else {
+                description.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
